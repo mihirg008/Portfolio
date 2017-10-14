@@ -3,18 +3,20 @@
 <head>
 <title>My Sketches</title>
 <style type="text/css">
-    body{}
-        table{;font-size: 20px;
-          background:#01b8e8;
-          background: linear-gradient(to left, rgba(1,184,232,0), rgba(1,184,232,1)); /*Standard*/
-          width : 100%;}
-          a:hover{border: 3px solid red;}
-          a:visited{color:white;}/*nav bar links*/
+    body{background: red; /* For browsers that do not support gradients */
+          background: radial-gradient(circle,#4d0099,#47476b,#6666cc);}
+    .nb{font-size: 20px;
+        background:#01b8e8;
+        background: linear-gradient(to left, rgba(1,184,232,0), rgba(1,184,232,1)); /*Standard*/
+        width : 100%;}
+    a:hover{border: 3px solid red;}
+    a:visited{color:white;}/*nav bar links*/
+    h3{text-align: center;}
 </style>
 </head>
 <body>
   <hr>
-  <table>
+  <table class="nb">
   <td><a href="index.html">Home</a></td>
   <td><a href="AM.html">About Me</a></td>
   <td><a href="hob.html">Interests </a></td>
@@ -22,5 +24,26 @@
   <td><a href="CM.html">Contact Me</a></td>
   </table>
   <hr>
+<h3>These are my Sketches...
+<table class="sk">
+<tr>
+<td><img src="s1.jpg" /></td>
+<td><img src="s2.jpg" /></td>
+<td><img src="s7.jpg" /></td>
+</tr>
+<tr>
+<td colspan="2"><img src="s5.jpg" /></td>
+<td><img src="s4.jpg" /></td>
+</tr>
+<tr>
+<td><img src="s3.jpg" /></td>
+<td colspan="2"><img src="s6.jpg" /></td>
+</tr>
+<tr>
+<td><img src="s8.jpg" /></td>
+<td><img src="s9.jpg" /></td>
+<td><img src="s10.jpg" /></td>
+</tr>
+</table>
 </body>
 </html>
