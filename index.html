@@ -29,7 +29,6 @@
             left:40%;font-size: 25px;
           text-align: center;}
     a:link{color:white;}
-    a:hover{border: 5px solid red;}
     a:visited{color:white;}
     .nb{font-size: 20px;
         background:#01b8e8;
@@ -40,6 +39,42 @@
         left:44%;}
     #self{border-radius: 50%; height: 200px;width: 200px}
     img{border-radius: 30%;height: 40px;width: 40px}
+/*fade in tooltip*/
+.tooltip {position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+          }
+
+.tooltip .tooltiptext {visibility: hidden;
+                      width: 120px;
+                      background-color: black;
+                      color: #fff;
+                      text-align: center;
+                      border-radius: 6px;
+                      padding: 5px 0;
+                      position: absolute;
+                      z-index: 1;
+                      top: 150%;
+                      left: 50%;
+                      margin-left: -60px;
+
+/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+                      opacity: 0;
+                      transition: opacity 1s;
+                      }
+
+.tooltip .tooltiptext::after {content: "";
+                        position: absolute;
+                        bottom: 100%;
+                        left: 50%;
+                        margin-left: -5px;
+                        border-width: 5px;
+                        border-style: solid;
+                        border-color: transparent transparent black transparent;
+                        }
+.tooltip:hover .tooltiptext {visibility: visible;
+                            opacity: 1;
+                            }
   </style>
 </head>
 
@@ -48,13 +83,20 @@
   </div>
     <div class="social">
   </br>You can find me on<br/>
-  <a href="https://www.facebook.com/mihirg008"><img src="fb.png"/></a>
-  <a href="https://www.linkedin.com/in/mihir-gupta-kgp"><img src="in.png"/></a>
-  <a href="https://www.instagram.com/mihir_guptaa/"><img src="inst.jpeg"/></a>
-  <a href="https://mgweblogs.wordpress.com"><img src="wpr.png"/></a>
-  <a href="https://www.quora.com/profile/Mihir-Gupta-5"><img src="download.png"/></a>
-  <a href="mailto:mihirg008@gmail.com"><img src="gmail.png"/></a>
-  <a href="https://github.com/mihirg008/"><img src="download (1).png"/></a><br/>
+  <div class="tooltip"><a href="https://www.facebook.com/mihirg008"><img src="fb.png"/></a>
+  <span class="tooltiptext">Facebook</span></div>
+  <div class="tooltip"><a href="https://www.linkedin.com/in/mihir-gupta-kgp"><img src="in.png"/></a>
+  <span class="tooltiptext">LinkedIn</span></div>
+  <div class="tooltip"><a href="https://www.instagram.com/mihir_guptaa/"><img src="inst.jpeg"/></a>
+  <span class="tooltiptext">Instagram</span></div>
+  <div class="tooltip"><a href="https://mgweblogs.wordpress.com"><img src="wpr.png"/></a>
+  <span class="tooltiptext">Wordpress</span></div>
+  <div class="tooltip"><a href="https://www.quora.com/profile/Mihir-Gupta-5"><img src="download.png"/></a>
+  <span class="tooltiptext">Quora</span></div>
+  <div class="tooltip"><a href="mailto:mihirg008@gmail.com"><img src="gmail.png"/></a>
+  <span class="tooltiptext">Gmail</span></div>
+  <div class="tooltip"><a href="https://github.com/mihirg008/"><img src="download (1).png"/></a>
+  <span class="tooltiptext">Github</span></div><br/>
   </div>
 <div class ="a">Hi there! I am Mihir Gupta and this is my website.</div>
 <div class="b"><hr>
