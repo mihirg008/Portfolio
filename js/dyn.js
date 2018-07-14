@@ -1,1 +1,48 @@
-time=(new Date).getTime(),$(window).scroll(function(a){var e=(new Date).getTime(),t=$(window).scrollTop();if(e-time>50&&t<700){var o=t/300;$(".scroll-img").css("opacity",o),$(".location-label").css("opacity",.1+Math.min(o/2,.4)),time=e}}),$(document).ready(function(){var a={BayArea:"Bay Area, California",Kolkata:"Kolkata, India",NYC:"New York City",Ithaca:"Ithaca, New York"},e=Object.keys(a),t=e[Math.floor(Math.random()*e.length)],o="url("+("img/"+t+"/bg0.jpg")+")",r="url("+("img/"+t+"/bg0-blur.jpg")+")";$(".img-src").css("background-image",r),$(".scroll-img").css("background-image",o),$(".location-label").text(a[t])});var html5_audiotypes={mp3:"audio/mpeg",mp4:"audio/mp4",ogg:"audio/ogg",wav:"audio/wav"};function createsoundbite(a){var e=document.createElement("audio");if(e.canPlayType){for(var t=0;t<arguments.length;t++){var o=document.createElement("source");o.setAttribute("src",arguments[t]),arguments[t].match(/\.(\w+)$/i)&&o.setAttribute("type",html5_audiotypes[RegExp.$1]),e.appendChild(o)}return e.load(),e.playclip=function(){e.pause(),e.currentTime=0,e.play()},e}return{playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}}var fullname=createsoundbite("./MG.mp3");
+/*$(function(){
+  $("a[href*=#]:not([href=#])").click(function(){
+    if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")||location.hostname==this.hostname){
+      var a=$(this.hash);
+      a=a.length?a:$("[name="+this.hash.slice(1)+"]");
+      if(a.length){
+        $("html,body").animate({scrollTop:a.offset().top},1000);
+        return false}}})});*/
+time=new Date().getTime();
+  $(window).scroll(function(c){
+    var d=new Date().getTime();
+    var a=$(window).scrollTop();
+    if(d-time>50&&a<700){
+      var b=(a/300);
+      $(".scroll-img").css("opacity",b);
+      $(".location-label").css("opacity",0.1+Math.min(b/2,0.4));time=d}});
+  $(document).ready(function(){
+    var h={BayArea:"Bay Area, California",Kolkata:"Kolkata, India",NYC:"New York City",Ithaca:"Ithaca, New York"};
+    var a=Object.keys(h);
+    //var c=Math.floor(Math.random()*3);
+    var c=0;
+    var f=Math.floor(Math.random()*a.length);
+    var d=a[f];
+    var g="img/"+d+"/bg"+c+".jpg";
+    var i="img/"+d+"/bg"+c+"-blur.jpg";
+    var b="url("+g+")";
+    var e="url("+i+")";
+    $(".img-src").css("background-image",e);
+    $(".scroll-img").css("background-image",b);
+    $(".location-label").text(h[d])});
+
+var html5_audiotypes={mp3:"audio/mpeg",mp4:"audio/mp4",ogg:"audio/ogg",wav:"audio/wav"};
+    function createsoundbite(d){
+      var b=document.createElement("audio");
+        if(b.canPlayType){
+          for(var c=0;c<arguments.length;c++)
+            {
+              var a=document.createElement("source");
+              a.setAttribute("src",arguments[c]);
+              if(arguments[c].match(/\.(\w+)$/i)){
+                a.setAttribute("type",html5_audiotypes[RegExp.$1])}b.appendChild(a)}
+          b.load();
+          b.playclip=function(){
+            b.pause();b.currentTime=0;b.play()};
+          return b}
+        else{
+          return{playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}}}
+        var fullname=createsoundbite("./MG.mp3");
