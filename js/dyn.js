@@ -15,7 +15,7 @@ time=new Date().getTime();
       $(".scroll-img").css("opacity",b);
       $(".location-label").css("opacity",0.1+Math.min(b/2,0.4));time=d}});
   $(document).ready(function(){
-    var h={BayArea:"Bay Area, California",Kolkata:"Kolkata, India",NYC:"New York City",Ithaca:"Ithaca, New York"};
+    var h={Kolkata:"Kolkata, West Bengal",Jaipur:"Jaipur, Rajasthan",KGP:"Kharagpur, West Bengal"};
     var a=Object.keys(h);
     //var c=Math.floor(Math.random()*3);
     var c=0;
