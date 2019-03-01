@@ -1,11 +1,12 @@
 @font-face{font-family:MyHelveticaNeue;src:url(fonts/helvetica-neue-bold.ttf) format("truetype")}
   html,body{height:100%;width:100%}
+  .top-m{margin: 150px !important;}
   .vert-text{color:#fff;display:table-cell;
     vertical-align:middle;
     text-align:center;
     opacity:.9}
   .vert-text
-      h1{padding:0;margin-top:150px;font-size:4.5em;font-weight:700;text-shadow:2px 4px 3px rgba(0,0,0,0.3)}
+      h1{padding:0;font-size:4.5em;font-weight:700;text-shadow:2px 4px 3px rgba(0,0,0,0.3)}
   .icon{opacity:.4;color:#fff}
   .icon:hover{opacity:.8;color:#fff}
   .tooltip-inner{background:0;color:#fff;opacity:.6}

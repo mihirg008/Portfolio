@@ -91,6 +91,8 @@
     padding: 60px;
   }
   .vert-text{
+    margin-top:150px !important;
+    margin-bottom:250px !important;
     padding:60px;
     height: 450px;
     color:#fff;
