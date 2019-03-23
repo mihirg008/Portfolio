@@ -161,3 +161,8 @@ i.work-im{
 .res-lg:hover{
   color: #B0B0B0;
 }
+@media only screen and (max-width: 768px) {
+  .vert-text{padding-left : 0;padding-right : 0;}
+  .vert-text
+    h1{padding-left : 0;padding-right : 0;}
+}
