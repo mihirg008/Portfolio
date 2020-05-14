@@ -1,12 +1,12 @@
 {
-    "1": {
+    "7": {
         "name": "Gopali Youth Welfare Society",
         "image": "./img/w/gyws.jpg",
         "link": "http://www.gyws.org",
         "time": "Aug '17 - Present",
         "content": ">One of the **biggest Student Run NGO's of India**, GYWS (expanding throughout the nation : **[LIGHT](http://light.gyws.org)** majorly functions in the Gopali area near IIT KGP providing quality education to the children of less priviledged sections of the society. Currently the Public Relations Officer here."
     },
-    "2": {
+    "8": {
         "name": "General Motors Techical Center India",
         "image": "./img/w/gm.jpg",
         "link": "https://www.gm.com/",
@@ -14,18 +14,18 @@
         "content": "As a Summer Intern was a part of the Electrical Enterprise - Business Planning and Strategy Division. Implemented automation protocols to optimize teh working of the team"
 
     },
-    "3": {
+    "9": {
         "name": "Team Kart",
         "image": "./img/w/tk.jpg",
         "link": "http://teamkart.org",
-        "time": "A-B",
+        "time": "Sep '17- March '19",
         "content": "The **Formula Student** team of **IIT Kharagpur**. I was member of the **Suspension and Brakes** Team here."
     },
-    "4": {
+    "10": {
         "name": "Solar91",
         "image": "./img/w/solar91.png",
         "link": "http://solar91.com",
-        "time": "A-B",
+        "time": "May '18 - July '18",
         "content": "I was a Summer Intern here, gained knowledge on how a Solar EPC functions in the market and manages it's projects in brief."
     }
 }
