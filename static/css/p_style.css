@@ -1,7 +1,8 @@
   html,
   body {
       height: 100%;
-      width: 100%
+      width: 100%;
+      overflow-x: ;
   }
   
   .head-link {
@@ -258,5 +259,5 @@
   img.lightsliderx {
       display: block;
       height: auto;
-      max-width: 100%;
+      max-width: 80%;
   }
